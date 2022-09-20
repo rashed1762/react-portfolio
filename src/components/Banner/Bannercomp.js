@@ -4,16 +4,10 @@ import { Typewriter } from 'react-simple-typewriter';
 import img3 from '../assests/125.webp';
 import img4 from '../assests/245329438_2848689565355987_7222936952074024145_n-removebg-preview.png'
 
-
-
-
-
 const Bannercomp = () => {
     
-
     return (
-        <div className='banner container-fluid'>
-            
+        <div  className='banner container-fluid'>
            <div className="row">
             <div className="col-md-4 end">
                 <div className='img-part'>
@@ -28,15 +22,15 @@ const Bannercomp = () => {
 
             </div>
             <div className="col-md-5">
-                <div className='banner-info'>
-                <h1>Hi There</h1>
+                <div className='banner-info'  data-aos="fade-right">
+                <span className='hi'><h1>Hi There</h1></span>
                 <h2>
                     I am 
                     <span style={{ color: 'red', fontWeight: 'bold' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={['Rashedul islam', ' a Frontend developer', ' a UI deigner', ' a Freelancer']}
-            loop={10}
+            words={[' Rashedul islam', ' a Frontend developer', ' a UI deigner', ' a Freelancer']}
+            loop={100}
             cursor
             cursorStyle='|'
             typeSpeed={70}
@@ -48,11 +42,13 @@ const Bannercomp = () => {
                     
                 </h2>
               
-                
-                <p>i'm a freelance ui designer and frontend developer .i strives to buld immersive and beautiful web application through carefully crafted code and user-cenric design.</p>
+                <span className='peragraph'><p>i'm a freelance ui designer and frontend developer .i strives to buld immersive and beautiful web application through carefully crafted code and user-cenric design.</p></span>
                 <div className='btn-part'>
                 <button className='btn-1'>ABOUT ME</button>
-                <button className='btn-2'>Portfolioi</button>
+                    <a href="Rashed-resume.pdf" download="Rashed-resume.pdf" >
+                    <button className='btn-2'>Portfolioi</button>
+                    </a>
+            
 
                 </div>
                 </div>

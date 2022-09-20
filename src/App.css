@@ -2,7 +2,14 @@
 .App {
   
 
-  
+}
+.bar{
+ display: block;
+ margin:   auto;
+ margin-top: 450px;
+
+ 
+ 
 }
 
 .App-logo {

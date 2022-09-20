@@ -7,33 +7,35 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Navcomp = () => {
     return (
-        <div>
+        <div >
             <>
       {[false,].map((expand) => (
-        <Navbar key={expand} bg="dark"  expand={expand} className="mb-3 fixed-top">
+        <Navbar key={expand}   expand={expand} className=" mb-3 navstyle fixed-top">
           <Container fluid>
-            <Navbar.Brand href="#">Rashed</Navbar.Brand>
+            {/* <Navbar.Brand href="#">Rashed</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas 
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
+              placement="start"
             >
+              
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                <Offcanvas.Title  id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  <span className='off'>Rashed</span>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body >
-                <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#about">About</Nav.Link>
-                  <Nav.Link href="#projects">Projects</Nav.Link>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav className="justify-content-center linkt  flex-grow-1 pe-3">
+                  <Nav.Link  className='link'  to="/" >Home</Nav.Link>
+                  <Nav.Link className='link'  to="/about" >About</Nav.Link>
+                  <Nav.Link className='link'  to="/projects" >Projects</Nav.Link>
+                  <Nav.Link className='link'  to="/contact" >Contact</Nav.Link>
                   
                 </Nav>
                 
               </Offcanvas.Body>
+              
             </Navbar.Offcanvas>
           </Container>
         </Navbar>

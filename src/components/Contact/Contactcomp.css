@@ -1,0 +1,21 @@
+.waves{
+    margin-top: 410px;
+    position: absolute;
+}
+.form {
+    background-color: azure;
+    position: relative;
+    border: 2px solid rgb(238, 245, 238);
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(130, 242, 195);
+}
+
+
+@media (max-width:500px) {
+    .form{
+        width: 100%;
+    }
+
+}
+

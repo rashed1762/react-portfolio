@@ -24,7 +24,8 @@ const Aboutcomp = () => {
 
 
     return (
-        <div className='about container-fluid'>
+        <div className='about container-fluid' data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="2000">
             <h1>About me</h1>
             
             <div className="row">
@@ -154,11 +155,11 @@ const Aboutcomp = () => {
         </div>
         <div>
         <h6>ReactJS</h6>
-    <ProgressBar now={React} label={`${css}%`} />;
+    <ProgressBar now={React} label={`${React}%`} />;
         </div>
         <div>
         <h6>IT Managmen System</h6>
-    <ProgressBar now={React} label={`${IT}%`} />;
+    <ProgressBar now={IT} label={`${IT}%`} />;
         </div>
     
         
